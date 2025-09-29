@@ -56,6 +56,7 @@ class RetroDiffusionAPINode:
                 "width": ("INT", {"default": 128, "min": 16, "max": 512, "step": 8}),
                 "height": ("INT", {"default": 128, "min": 16, "max": 512, "step": 8}),
                 "prompt_style": (prompt_styles,),
+                "bypass_prompt_expansion": ("BOOLEAN", {"default": False}),
                 "remove_bg": ("BOOLEAN", {"default": False}),
                 "tile_x": ("BOOLEAN", {"default": False}),
                 "tile_y": ("BOOLEAN", {"default": False}),
@@ -74,7 +75,7 @@ class RetroDiffusionAPINode:
     FUNCTION = "generate_image"
     CATEGORY = "RetroDiffusion"
 
-    def generate_image(self, seed, width, height, prompt_style, remove_bg, tile_x, tile_y, return_spritesheet_for_animations, prompt, denoise, input_image=None):
+    def generate_image(self, seed, width, height, prompt_style, bypass_prompt_expansion, remove_bg, tile_x, tile_y, return_spritesheet_for_animations, prompt, denoise, input_image=None):
         url = "https://api.retrodiffusion.ai/v1/inferences"
         
         headers = {
@@ -86,6 +87,7 @@ class RetroDiffusionAPINode:
             "width": width,
             "height": height,
             "prompt_style": prompt_style,
+            "bypass_prompt_expansion": bypass_prompt_expansion,
             "remove_bg": remove_bg,
             "tile_x": tile_x,
             "tile_y": tile_y,
