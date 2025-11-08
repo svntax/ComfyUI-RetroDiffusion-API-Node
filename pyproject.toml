@@ -28,7 +28,7 @@ Documentation = "https://github.com/svntax/ComfyUI-RetroDiffusion-API-Node/wiki"
 "Bug Tracker" = "https://github.com/svntax/ComfyUI-RetroDiffusion-API-Node/issues"
 
 [tool.comfy]
-PublisherId = ""
+PublisherId = "svntax"
 DisplayName = "ComfyUI-RetroDiffusion-API-Node"
 Icon = ""
 includes = [] 
