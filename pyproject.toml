@@ -1,6 +1,6 @@
 [project]
 name = "retrodiffusion-api-node"
-description = "A ComfyUI custom node for the [a/Retro Diffusion API](https://retrodiffusion.ai/)"
+description = "A custom node for image generation using the Retro Diffusion API"
 version = "1.0.0"
 license = {file = "LICENSE"} 
 # classifiers = [
