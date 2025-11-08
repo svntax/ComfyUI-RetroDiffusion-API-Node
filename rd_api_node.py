@@ -48,7 +48,8 @@ class RetroDiffusionAPINode:
                          "rd_plus__cartoon", "rd_plus__ui_element", "rd_plus__item_sheet", "rd_plus__character_turnaround",
                          "rd_plus__topdown_map", "rd_plus__topdown_asset", "rd_plus__isometric", "rd_plus__isometric_asset",
                          "rd_plus__classic", "rd_plus__low_res", "rd_plus__mc_item", "rd_plus__mc_texture",
-                         "animation__four_angle_walking", "animation__walking_and_idle", "animation__vfx"]
+                         "rd_plus__topdown_item", "rd_plus__skill_icon", "rd_plus__environment",
+                         "animation__four_angle_walking", "animation__walking_and_idle", "animation__small_sprites", "animation__vfx"]
         return {
             "required": {
                 #"api_key": ("STRING", {"default": "YOUR_API_KEY", "multiline": False}),
